@@ -1,6 +1,9 @@
 :root{
     --bodyBackground: #001e4d;
+    --headerColor: #001e4d;
     --white: #FFFF;
+    --lineColor: #333;
+    --btnColor: #222;
 }
 
 *{
@@ -23,3 +26,52 @@ body{
     padding: 30px;
 }  
 
+.container h1{
+    font-size: 25px;
+    color: var(--headerColor);
+    font-weight: 600;
+    border-bottom: 1px solid var(--lineColor);
+    padding-bottom: 30px;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: var(--headerColor);
+    font-weight: 600;
+}
+
+.btn{
+    background: var(--white);
+    color: var(--btnColor);
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid var(--btnColor);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background: var(--btnColor);
+    color: var(--white);  
+}
+
+#next-btn{
+    background: var(--bodyBackground);
+    color: var(--white);
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
