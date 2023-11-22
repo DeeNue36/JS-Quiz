@@ -4,6 +4,8 @@
     --white: #FFFF;
     --lineColor: #333;
     --btnColor: #222;
+    --correctColor: #9aeabc;
+    --incorrectColor: #ff9393;
 }
 
 *{
@@ -74,4 +76,23 @@ body{
     border-radius: 5px;
     cursor: pointer;
     display: none;
+}
+
+/* JavaScript added and induced classes styles */
+
+.correct{
+    background: var(--correctColor);
+}
+
+.incorrect{
+    background: var(--incorrectColor);
+}
+
+.btn:hover:not([disabled]) {
+    background: var(--btnColor);
+    color: var(--white);
+}
+
+.btn:disabled{
+    cursor: no-drop;
 }
