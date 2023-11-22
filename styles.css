@@ -60,7 +60,8 @@ body{
     transition: all 0.5s;
 }
 
-.btn:hover{
+/* :not([disabled]) is a javascript induced style i.e caused by the behaviour the app is supposed to have */
+.btn:hover:not([disabled]){
     background: var(--btnColor);
     color: var(--white);  
 }
@@ -86,11 +87,6 @@ body{
 
 .incorrect{
     background: var(--incorrectColor);
-}
-
-.btn:hover:not([disabled]) {
-    background: var(--btnColor);
-    color: var(--white);
 }
 
 .btn:disabled{

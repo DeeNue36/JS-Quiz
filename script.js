@@ -47,7 +47,7 @@ const question = document.getElementById("questions");
 //HTML element which contains the buttons containing the multiple answers
 const answerButtons = document.getElementById("answer-buttons");
 
-//HTML element which contains the button to move to the nect question
+//HTML element which contains the button to move to the next question
 const nextButton = document.getElementById("next-btn");
 
 //default state variables 
@@ -99,8 +99,8 @@ function showQuestion() {
 //function to reset the state of the quiz
 function resetState(){
     nextButton.style.display = "none";
-    while(answerButtons.firstchild){
-        answerButtons.removeChild(answerButtons.firstchild);
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
